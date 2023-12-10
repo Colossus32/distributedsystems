@@ -1,4 +1,4 @@
-package com.colossus.fraud;
+package com.colossus.clients.fraud;
 
 public record FraudCheckResponse(Boolean isFraudster) {
 }
