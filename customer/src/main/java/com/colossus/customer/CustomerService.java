@@ -22,6 +22,7 @@ public record CustomerService(CustomerRepository customerRepository,
         // todo: check if email is not taken
         customerRepository.saveAndFlush(customer);
         // todo: check if fraudster
+        customer = customerRepository.getCustomerByEmail(request.email());
 
         FraudCheckResponse fraudCheckResponse = fraudClient.isFraudster(customer.getId());
 
