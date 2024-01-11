@@ -74,6 +74,7 @@
             <artifactId>feign-micrometer</artifactId>
         </dependency>
 
+
     </dependencies>
 
 </project>
